@@ -28,7 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(146, 52);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(197, 31);
+            this.lblStatus.TabIndex = 0;
+            this.lblStatus.Text = "-Thread Starts-";
+            // 
+            // btnRun
+            // 
+            this.btnRun.BackColor = System.Drawing.Color.Teal;
+            this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRun.Location = new System.Drawing.Point(196, 99);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(90, 41);
+            this.btnRun.TabIndex = 1;
+            this.btnRun.Text = "Run";
+            this.btnRun.UseVisualStyleBackColor = false;
             // 
             // frmTrackThread
             // 
@@ -36,13 +60,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(492, 223);
+            this.Controls.Add(this.btnRun);
+            this.Controls.Add(this.lblStatus);
             this.Name = "frmTrackThread";
             this.Text = "TrackThread";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Button btnRun;
     }
 }
 
