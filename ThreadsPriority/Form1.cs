@@ -20,7 +20,6 @@ namespace ThreadsPriority
 
         private void frmTrackThread_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnRun_Click(object sender, EventArgs e)
@@ -30,7 +29,7 @@ namespace ThreadsPriority
             Thread threadA = new Thread(MyThreadClass.Thread1);
             Thread threadB = new Thread(MyThreadClass.Thread2);
             Thread threadC = new Thread(MyThreadClass.Thread1);
-            Thread threadD = new Thread(MyThreadClass.Thread1);
+            Thread threadD = new Thread(MyThreadClass.Thread2);
 
             threadA.Name = "Thread A";
             threadB.Name = "Thread B";

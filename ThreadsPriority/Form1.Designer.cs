@@ -35,16 +35,16 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Britannic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Location = new System.Drawing.Point(146, 52);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(197, 31);
+            this.lblStatus.Size = new System.Drawing.Size(190, 30);
             this.lblStatus.TabIndex = 0;
             this.lblStatus.Text = "-Thread Starts-";
             // 
             // btnRun
             // 
-            this.btnRun.BackColor = System.Drawing.Color.Teal;
+            this.btnRun.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRun.Location = new System.Drawing.Point(196, 99);

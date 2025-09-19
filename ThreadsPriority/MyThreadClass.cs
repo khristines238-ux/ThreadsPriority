@@ -12,12 +12,12 @@ namespace ThreadsPriority
         public static void Thread1()
         {
             Thread thread = Thread.CurrentThread;
-            for (int loopCount = 0; loopCount < 2; loopCount++)
+            for (int loopCount = 0; loopCount < 3; loopCount++)
             {
-                Console.WriteLine("Name of Thread: " + thread.Name + " Process = " + loopCount);
+                Console.WriteLine("Name of Thread: " + thread.Name + " Task = " + loopCount);
 
                 Thread.Sleep(500);
-
+                
             }
         }
         public static void Thread2()
@@ -25,9 +25,10 @@ namespace ThreadsPriority
             Thread thread = Thread.CurrentThread;
             for (int loopCount = 0; loopCount < 6; loopCount++)
             {
-                Console.WriteLine("Name of Thread: " + thread.Name + " Process = " + loopCount);
+                Console.WriteLine("Name of Thread: " + thread.Name + " Task = " + loopCount);
 
                 Thread.Sleep(1500);
+
             }
         }
     }
